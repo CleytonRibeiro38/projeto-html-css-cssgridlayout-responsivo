@@ -95,6 +95,9 @@ padding: 20px; border-radius: 5px; box-shadow: 5px 5px 15px 0px rgba(44, 44, 44,
 .col-wide {grid-column: 1 / -1;}
 .imagem-1 {grid-row: span 2; align-self: end;}
 .imagem-2 {align-self: end;}
+@media (max-width: 600px) {
+    .content {grid-template-columns: auto;}
+}
 /*==========CONTENT-ESTILOS==========*/
 .titulo {color: #b07dfb;}
 .titulo h1 {font-size: 3.75em; font-weight: 700; line-height: 1;}
@@ -115,7 +118,8 @@ background: linear-gradient(135deg, #8844ee, #b07dfb);}
 p {font-size: 1.2em; line-height: 1.6; letter-spacing: -0.005em; color: rgba(0, 0, 0, 0.7); text-align: justify;}
 .informacoes p + p {margin-top: 30px;}
 /*==========ANUNCIOS==========*/
-.anuncios {background: #fafbfc; display: grid; align-content: start; padding: 30px; gap: 30px;}
+.anuncios {background: #fafbfc; display: grid; align-content: start; padding: 30px; gap: 30px;
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));}
 /*==========FOOTER==========*/
 .footer {background: linear-gradient(135deg, #8844ee, #b07dfb);}
 .footer p {color: white; text-align: center; padding: 30px;}
